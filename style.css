@@ -1,88 +1,19 @@
-/* GENERAL PAGE STYLE */
 body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  background: linear-gradient(135deg, #4c6ef5, #15aabf);
-}
-
-/* HERO SECTION */
-.hero {
-  padding: 120px 20px;
+  font-family: Arial;
   text-align: center;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeIn 1.5s ease forwards;
+  margin-top: 70px;
 }
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 15px;
+input {
+  padding: 10px;
+  width: 200px;
 }
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
 button {
-  font-size: 18px;
-  padding: 14px 30px;
+  padding: 10px 20px;
+  background: blue;
+  color: white;
   border: none;
-  border-radius: 10px;
-  background: #ffd43b;
-  color: black;
   cursor: pointer;
-  transition: 0.3s ease;
 }
-
 button:hover {
-  transform: scale(1.12);
-}
-
-/* FEATURES */
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 60px 20px;
-}
-
-.feature {
-  background: rgba(255,255,255,0.2);
-  padding: 25px 30px;
-  border-radius: 12px;
-  backdrop-filter: blur(5px);
-  font-size: 18px;
-  opacity: 0;
-  animation: fadeUp 1s ease forwards;
-}
-
-/* Animation delays */
-.feature:nth-child(1){ animation-delay: .4s; }
-.feature:nth-child(2){ animation-delay: .7s; }
-.feature:nth-child(3){ animation-delay: 1s; }
-
-.feature:hover {
-  transform: translateY(-8px);
-  transition: 0.3s;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-/* ANIMATION KEYFRAMES */
-@keyframes fadeIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  opacity: 0.9;
 }
