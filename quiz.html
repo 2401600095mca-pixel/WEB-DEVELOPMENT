@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Learning | Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadQuiz()">
+<div class="container">
+  <h2>Course Quiz</h2>
+
+  <p>1. HTML stands for?</p>
+  <input type="radio" name="q1" value="wrong"> Home Tool Markup Language<br>
+  <input type="radio" name="q1" value="correct"> HyperText Markup Language<br>
+
+  <p>2. CSS is used for?</p>
+  <input type="radio" name="q2" value="correct"> Styling Web Pages<br>
+  <input type="radio" name="q2" value="wrong"> Saving Data<br>
+
+  <button onclick="submitQuiz()">Submit</button>
+  <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

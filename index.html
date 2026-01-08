@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <h1>Welcome to SkillBoost 🚀</h1>
-        <p>Learn new skills faster and grow your career today.</p>
-        <button id="ctaBtn">Start Learning</button>
-    </header>
+<div class="container">
+  <h2>Login</h2>
 
-    <!-- FEATURES SECTION -->
-    <section class="features">
-        <div class="feature">🔥 Hands-on Projects</div>
-        <div class="feature">📘 Guided Courses</div>
-        <div class="feature">💡 Real-time Feedback</div>
-    </section>
+  <input type="text" id="username" placeholder="Enter Username" required>
+  <input type="password" id="password" placeholder="Enter Password" required>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>©2026 Your Name | All Rights Reserved</p>
-    </footer>
+  <button onclick="login()">Login</button>
+
+  <p>
+    New user?
+    <a href="register.html">Create Account</a>
+  </p>
+
+  <p id="error"></p>
+</div>
 
 <script src="script.js"></script>
 </body>
